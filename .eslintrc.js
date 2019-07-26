@@ -11,6 +11,8 @@ module.exports = {
     "plugin:jest/style"
   ],
   env: {
+    browser: true,
+    node: true,
     "jest/globals": true
   },
   rules: {
