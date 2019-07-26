@@ -18,6 +18,12 @@ let client = {
   ...shared
 };
 
+let eslint = {
+  displayName: "lint",
+  runner: "jest-runner-eslint",
+  testMatch: ["<rootDir>/__tests__/**/*.js", "<rootDir>/lib/**/*.js"]
+};
+
 module.exports = {
-  projects: [client, server]
+  projects: [eslint, client, server]
 };
